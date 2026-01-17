@@ -1,0 +1,98 @@
+body {
+    font-family: 'Mplus1', sans-serif; /* Attempt to use the app's font, fallback to generic sans-serif */
+    background-color: #12121A; /* App's dark background color */
+    color: #E0E0E0; /* Light gray text for contrast */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1A1A2E; /* Slightly lighter dark background for content areas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+}
+
+header {
+    background-color: #1A1A2E;
+    color: #00BCD4; /* Cyan accent color */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #00BCD4;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Glowing effect */
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #00BCD4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4DD0E1;
+}
+
+h2 {
+    color: #00BCD4;
+    border-bottom: 2px solid #00BCD4;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #00BCD4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #1A1A2E;
+    color: #9E9E9E;
+    border-top: 1px solid #00BCD4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
